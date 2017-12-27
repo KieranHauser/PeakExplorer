@@ -1,0 +1,43 @@
+//CONTAINS ALL LANDING PAGE SECTION STYLES
+
+
+//SECTION LANDING
+.landing {
+    color: $color-white;
+    font-size: $heading-font-size;
+    height: 90vh;
+    background-image: linear-gradient(to bottom right, 
+    rgba($color-primary-light-1, 0.5),
+    rgba($color-primary-light-2, 0.5)),
+    url(../img/landingPic.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative; 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);    
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    animation: fadeIn 2.5s ease-out;
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        text-align: center;
+    }
+}
+
+//    rgba($color-tertiary-light, 0.5),
+//    rgba($color-tertiary-dark, 0.5)),
+
+//SECTION TRIPS
+.section-trips {
+    padding: 25rem 0;
+}
+
+//SECTION ABOUT
+
+
+//SECTION FEATURES
+
+//SECTION REVIEWS
+
