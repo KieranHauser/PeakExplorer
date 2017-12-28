@@ -16,6 +16,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);    
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     animation: fadeIn 2.5s ease-out;
+    
 
     &__text-box {
         position: absolute;
@@ -31,13 +32,27 @@
 
 //SECTION TRIPS
 .section-trips {
-    padding: 25rem 0;
+    padding: 25rem 0 0;
+    transform: translateY(-20rem);
 }
-
-//SECTION ABOUT
 
 
 //SECTION FEATURES
+.section-features {
+    transform: translateY(-20rem);
+    background-image: linear-gradient(to bottom right, 
+    rgba($color-primary-light-1, 0.8),
+    rgba($color-primary-light-2, 0.8));
+    color: $color-white;
+    padding: 30vh 0 5vh;
+    -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+}
+
+
+//SECITON ABOUT
 
 //SECTION REVIEWS
-
+.section-reviews {
+    transform: translateY(-10rem);
+}

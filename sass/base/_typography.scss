@@ -4,6 +4,11 @@ body {
     font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-1;
-    padding: 0 3rem;
-    padding-bottom: 3rem;
+    padding: 0 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+.heading-secondary {
+    font-size: $heading-2-font-size;
+    letter-spacing: .2rem;
 }

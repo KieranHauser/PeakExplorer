@@ -1,0 +1,35 @@
+.review-card {
+    height: 52rem;
+    width: 100%;
+    margin: 0 auto;    
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light-1, .8), rgba($color-primary-light-2, .8));
+    // background-color: rgba($color-grey-1, 0.5);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+
+    &__shape {
+        width: 12rem;
+        height: 12rem;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        // -webkit-shape-outside: circle(50% at 50% 50%);
+        // shape-outside: circle(50% at 50% 50%);
+        // -webkit-clip-path: circle(50% at 50% 50%);
+        // clip-path: circle(50% at 50% 50%);
+        border: 1px solid $color-grey-1;
+        position: relative;
+        overflow: hidden;
+        // outline: 1px solid $color-white; 
+        // outline-offset: 1px;
+        
+    }
+
+    &__image {        
+        height: 100%;
+        backface-visibility: hidden;
+        transition: all .5s;
+        // outline-offset: 1rem;
+    }
+}

@@ -1,24 +1,27 @@
-.navbar {
-}
-
 .nav-list {
     list-style: none;
     top:0;
     overflow: hidden;
+    width: 95vw;
+    position: fixed;
+    background: $color-white;
+    z-index: 1000;
 
 
     &__item {
         transition: all .5s;
+        display: block;
+        text-align: center;
+        padding: 1.4rem 1.6rem;
+        float: left;
+        text-decoration: none;
+        color: $color-grey-2;
 
         &:hover:not(:nth-child(3)) {
             background-color: rgba($color-primary-light-1, 0.8);
             border-bottom: $color-white;
             color: $color-white;
         }
-        display: block;
-        text-align: center;
-        padding: 1.4rem 1.6rem;
-        float: left;
 
         &--left {
             display: inline-block;
