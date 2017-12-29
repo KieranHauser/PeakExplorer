@@ -1,0 +1,20 @@
+.review {
+
+    &__box {
+        color: $color-grey-1;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        
+
+        &--quote {
+            font-size: $heading-font-size;
+        }
+
+        &--author {
+            text-align: left;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
