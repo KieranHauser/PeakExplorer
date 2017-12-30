@@ -1,4 +1,38 @@
 .question-box {
   height: 50rem;
-  width: 50rem;
+  width: 100%;
+  border: .5rem solid $color-primary-light-1;
+  border-radius: 3px;
+
+  &__picture {
+
+    &--novice {
+      height: 100%;
+      background-image: url(../img/Photo3.jpg);
+      background-size: cover;
+
+
+    }
+
+    &--intermediate {
+      height: 100%;
+      background-image: url(../img/Photo2.jpg);
+      background-size: cover;
+    }
+
+    &--expert {
+      height: 100%;
+      background-image: url(../img/ski-expert.jpeg);
+      background-size: cover;
+    }
+
+    &:hover {
+      animation: slideUpBottom 1s ease;
+    }
+  }
+
+  &__text {
+    font-size: 2.6rem;
+    text-align: center;
+  }
 }

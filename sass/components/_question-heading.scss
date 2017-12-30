@@ -1,0 +1,28 @@
+.question-heading {
+
+  margin: 5rem 11rem;
+
+  &__title {
+    font-size: 4rem;
+    display: inline-block;
+  }
+
+  &__btn {
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .7rem;
+    color: $color-primary-light-2;
+    height: 5rem;
+    min-width: 12.5rem;
+    border: .25rem solid $color-primary-light-2;
+    border-radius: .5rem;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary-light-2;
+    }
+  }
+
+}

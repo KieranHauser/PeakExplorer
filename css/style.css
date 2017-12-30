@@ -4,6 +4,16 @@
   100% {
     opacity: 1; } }
 
+@keyframes slideUpBottom {
+  0% {
+    background-color: #3498db;
+    opacity: 0.65;
+    transform: translateY(100%); }
+  100% {
+    background-color: #3498db;
+    opacity: 0.65;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -159,6 +169,49 @@ body {
     height: 100%;
     backface-visibility: hidden;
     transition: all .5s; }
+
+.question-box {
+  height: 50rem;
+  width: 100%;
+  border: 0.5rem solid #3498db;
+  border-radius: 3px; }
+  .question-box__picture--novice {
+    height: 100%;
+    background-image: url(../img/Photo3.jpg);
+    background-size: cover; }
+  .question-box__picture--intermediate {
+    height: 100%;
+    background-image: url(../img/Photo2.jpg);
+    background-size: cover; }
+  .question-box__picture--expert {
+    height: 100%;
+    background-image: url(../img/ski-expert.jpeg);
+    background-size: cover; }
+  .question-box__picture:hover {
+    animation: slideUpBottom 1s ease; }
+  .question-box__text {
+    font-size: 2.6rem;
+    text-align: center; }
+
+.question-heading {
+  margin: 5rem 11rem; }
+  .question-heading__title {
+    font-size: 4rem;
+    display: inline-block; }
+  .question-heading__btn {
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .7rem;
+    color: #00789b;
+    height: 5rem;
+    min-width: 12.5rem;
+    border: 0.25rem solid #00789b;
+    border-radius: .5rem; }
+    .question-heading__btn:hover {
+      color: #ffffff;
+      background-color: #00789b; }
 
 .row {
   max-width: 114rem;
