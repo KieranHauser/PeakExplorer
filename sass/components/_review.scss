@@ -1,0 +1,67 @@
+.review {
+
+    width: 75vw;
+    height: 30vh;
+    margin: 0 auto;
+    padding: 4rem;
+    padding-bottom: 7.5rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.5);
+    border: 2px solid rgba($color-grey-2, 0.05);
+
+    &__image-box {
+        display: inline-block;
+
+        &--first {
+            @include reviewImage;
+        }
+        &--second {
+            @include reviewImage;
+        }
+        &--third {
+            @include reviewImage;
+        }
+    }
+
+    &__box {
+        color: $color-grey-1;
+        font-weight: 400;
+
+        &--quote {
+            margin-top: -4px;
+            font-size: $default-font-size;
+
+            &--first {
+                @include reviewTextbox;
+            }
+
+            &--second {
+                @include reviewTextbox;
+                margin-right: 4rem;
+            }
+
+            &--third {
+                @include reviewTextbox;
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+
+        &--author {
+
+            &--first{
+                @include reviewAuthor;
+            }
+
+            &--second{
+                @include reviewAuthor;
+                margin-right: 4rem;
+            }
+
+            &--third {
+                @include reviewAuthor;
+                transform: translateX(-12.5%);
+            }
+
+        }
+    }
+}

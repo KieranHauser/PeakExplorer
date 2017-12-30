@@ -5,18 +5,19 @@
 .landing {
     color: $color-white;
     font-size: $heading-font-size;
+    font-weight: 300;
     height: 90vh;
-    background-image: linear-gradient(to bottom right, 
+    background-image: linear-gradient(to bottom right,
     rgba($color-primary-light-1, 0.5),
     rgba($color-primary-light-2, 0.5)),
     url(../img/landingPic.jpg);
     background-size: cover;
     background-position: top;
-    position: relative; 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);    
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     animation: fadeIn 2.5s ease-out;
-    
+
 
     &__text-box {
         position: absolute;
@@ -40,7 +41,7 @@
 //SECTION FEATURES
 .section-features {
     transform: translateY(-20rem);
-    background-image: linear-gradient(to bottom right, 
+    background-image: linear-gradient(to bottom right,
     rgba($color-primary-light-1, 0.8),
     rgba($color-primary-light-2, 0.8));
     color: $color-white;
@@ -54,5 +55,6 @@
 
 //SECTION REVIEWS
 .section-reviews {
-    transform: translateY(-10rem);
+  // padding: 2rem 0;
+  transform: translateY(-10rem);
 }

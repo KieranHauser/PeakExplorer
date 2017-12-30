@@ -29,7 +29,7 @@ body {
 
 body {
   font-family: "Lato", Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777777;
@@ -61,6 +61,21 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
 
+.u-shift-left {
+  transform: translateX(-4vw) !important; }
+
+.u-shift-right {
+  transform: translateX(4vw) !important; }
+
+.u-padding-bottom-small {
+  padding-bottom: 2rem !important; }
+
+.u-padding-bottom-medium {
+  padding-bottom: 4rem !important; }
+
+.u-padding-bottom-large {
+  padding-bottom: 8rem !important; }
+
 .nav-list {
   list-style: none;
   top: 0;
@@ -76,6 +91,7 @@ body {
     padding: 1.4rem 1.6rem;
     float: left;
     text-decoration: none;
+    font-weight: 400;
     color: #999999; }
     .nav-list__item:hover:not(:nth-child(3)) {
       background-color: rgba(52, 152, 219, 0.8);
@@ -92,9 +108,11 @@ body {
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.6rem;
+  font-weight: 400;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
+  border: 1px solid rgba(119, 119, 119, 0.4);
   border-radius: 10rem;
   position: relative; }
 
@@ -112,6 +130,7 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
+  font-weight: 400;
   display: inline-block;
   text-decoration: none;
   padding: 3px;
@@ -148,70 +167,72 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 5px; }
 
-.review-card {
-  height: 52rem;
-  width: 100%;
+.review {
+  width: 75vw;
+  height: 30vh;
   margin: 0 auto;
-  background-image: linear-gradient(to right bottom, rgba(52, 152, 219, 0.8), rgba(0, 120, 155, 0.8));
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
-  .review-card__shape {
-    width: 12rem;
-    height: 12rem;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    border: 1px solid #777777;
-    position: relative;
-    overflow: hidden; }
-  .review-card__image {
-    height: 100%;
-    backface-visibility: hidden;
-    transition: all .5s; }
-
-.question-box {
-  height: 50rem;
-  width: 100%;
-  border: 0.5rem solid #3498db;
-  border-radius: 3px; }
-  .question-box__picture--novice {
-    height: 100%;
-    background-image: url(../img/Photo3.jpg);
-    background-size: cover; }
-  .question-box__picture--intermediate {
-    height: 100%;
-    background-image: url(../img/Photo2.jpg);
-    background-size: cover; }
-  .question-box__picture--expert {
-    height: 100%;
-    background-image: url(../img/ski-expert.jpeg);
-    background-size: cover; }
-  .question-box__picture:hover {
-    animation: slideUpBottom 1s ease; }
-  .question-box__text {
-    font-size: 2.6rem;
-    text-align: center; }
-
-.question-heading {
-  margin: 5rem 11rem; }
-  .question-heading__title {
-    font-size: 4rem;
+  padding: 4rem;
+  padding-bottom: 7.5rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(153, 153, 153, 0.05); }
+  .review__image-box {
     display: inline-block; }
-  .question-heading__btn {
-    float: right;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    padding: .7rem;
-    color: #00789b;
-    height: 5rem;
-    min-width: 12.5rem;
-    border: 0.25rem solid #00789b;
-    border-radius: .5rem; }
-    .question-heading__btn:hover {
-      color: #ffffff;
-      background-color: #00789b; }
+    .review__image-box--first {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+    .review__image-box--second {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+    .review__image-box--third {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+  .review__box {
+    color: #777777;
+    font-weight: 400; }
+    .review__box--quote {
+      margin-top: -4px;
+      font-size: 1.6rem; }
+      .review__box--quote--first {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem; }
+      .review__box--quote--second {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem;
+        margin-right: 4rem; }
+      .review__box--quote--third {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem;
+        width: 75%;
+        margin: 0 auto; }
+    .review__box--author--first {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right; }
+    .review__box--author--second {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right;
+      margin-right: 4rem; }
+    .review__box--author--third {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right;
+      transform: translateX(-12.5%); }
 
 .row {
   max-width: 114rem;
@@ -242,6 +263,7 @@ body {
 .landing {
   color: #ffffff;
   font-size: 3.2rem;
+  font-weight: 300;
   height: 90vh;
   background-image: linear-gradient(to bottom right, rgba(52, 152, 219, 0.5), rgba(0, 120, 155, 0.5)), url(../img/landingPic.jpg);
   background-size: cover;
