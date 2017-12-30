@@ -5,3 +5,24 @@
         clear: both;
     }
 }
+
+@mixin reviewImage {
+    margin-right: 1rem;
+    border-radius: 3px;
+    float: left;
+    max-width: 75%;
+    max-height: 80%;
+}
+
+@mixin reviewTextbox {
+    border-left: .5rem solid $color-primary-light-1;
+    padding-left: 3rem;
+}
+
+@mixin reviewAuthor {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    border-top: .5rem solid rgba($color-primary-light-1, 1);
+    float: right;
+}

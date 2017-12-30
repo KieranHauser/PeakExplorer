@@ -4,6 +4,16 @@
   100% {
     opacity: 1; } }
 
+@keyframes slideUpBottom {
+  0% {
+    background-color: #3498db;
+    opacity: 0.65;
+    transform: translateY(100%); }
+  100% {
+    background-color: #3498db;
+    opacity: 0.65;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -50,6 +60,21 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
+
+.u-shift-left {
+  transform: translateX(-4vw) !important; }
+
+.u-shift-right {
+  transform: translateX(4vw) !important; }
+
+.u-padding-bottom-small {
+  padding-bottom: 2rem !important; }
+
+.u-padding-bottom-medium {
+  padding-bottom: 4rem !important; }
+
+.u-padding-bottom-large {
+  padding-bottom: 8rem !important; }
 
 .nav-list {
   list-style: none;
@@ -142,14 +167,72 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 5px; }
 
-.review__box {
-  color: #777777;
-  font-weight: 700; }
-  .review__box--quote {
-    font-size: 1.6rem; }
-  .review__box--author {
-    transform: translateY(5rem);
+.review {
+  width: 75vw;
+  height: 30vh;
+  margin: 0 auto;
+  padding: 4rem;
+  padding-bottom: 7.5rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(153, 153, 153, 0.05); }
+  .review__image-box {
+    display: inline-block; }
+    .review__image-box--first {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+    .review__image-box--second {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+    .review__image-box--third {
+      margin-right: 1rem;
+      border-radius: 3px;
+      float: left;
+      max-width: 75%;
+      max-height: 80%; }
+  .review__box {
+    color: #777777;
     font-weight: 400; }
+    .review__box--quote {
+      margin-top: -4px;
+      font-size: 1.6rem; }
+      .review__box--quote--first {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem; }
+      .review__box--quote--second {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem;
+        margin-right: 4rem; }
+      .review__box--quote--third {
+        border-left: 0.5rem solid #3498db;
+        padding-left: 3rem;
+        width: 75%;
+        margin: 0 auto; }
+    .review__box--author--first {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right; }
+    .review__box--author--second {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right;
+      margin-right: 4rem; }
+    .review__box--author--third {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      border-top: 0.5rem solid #3498db;
+      float: right;
+      transform: translateX(-12.5%); }
 
 .row {
   max-width: 114rem;
