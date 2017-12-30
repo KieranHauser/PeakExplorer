@@ -3,18 +3,22 @@
     &__box {
         color: $color-grey-1;
         font-weight: 700;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        // letter-spacing: 3px;
+        // text-transform: uppercase;
         
 
         &--quote {
-            font-size: $heading-font-size;
+            font-size: $default-font-size;
         }
 
         &--author {
-            text-align: left;
-            display: flex;
-            justify-content: flex-end;
+            // text-align: left;
+            // display: flex;
+            // justify-content: flex-end;
+            // transform: translateX(20rem);
+            transform: translateY(5rem);
+            font-weight: 400;
         }
     }
+
 }
