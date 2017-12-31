@@ -1,0 +1,40 @@
+.footer {
+    width: 100%vw;
+    padding: 5rem 0;
+    font-size: $default-font-size;
+
+    &__nav {
+        border-top: 1px solid $color-primary-light-1;
+        float: left;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-1;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-light-2;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        color: $color-grey-1;
+        padding-right: -30rem;
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__credit {
+        float: right;
+        border-top: 1px solid $color-primary-light-1;
+
+    }
+}

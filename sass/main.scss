@@ -6,12 +6,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/navbar";
 @import "components/button";
 @import "components/image-box";
-// @import "components/review-card";
 @import "components/review";
 
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/navbar";
 
 @import "pages/landing";
