@@ -7,12 +7,11 @@
 @import "base/utilities";
 
 @import "components/button";
-@import "components/footer";
 @import "components/image-box";
-@import "components/navbar";
-// @import "components/review-card";
 @import "components/review";
 
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/navbar";
 
 @import "pages/landing";
